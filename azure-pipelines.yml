@@ -7,12 +7,21 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+   name: Default
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: FortifyScanCentralSAST@7
+  inputs:
+    scanCentralCtrlUrl: 'http://192.168.10.243:8180/scancentral-ctrl/'
+    scanCentralClientToken: 'FortifySSC!'
+    sscUrl: 'http://192.168.10.243:8080/ssc'
+    sscCiToken: '74738eb7-66ff-4e76-a48e-b5eee15995bf'
+    uploadToSSC: true
+    applicationName: 'test'
+    applicationVersion: '2'
+    buildTool: 'none'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml

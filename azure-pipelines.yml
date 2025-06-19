@@ -15,5 +15,6 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      New-Item -ItemType Directory -Path "C:\MyFolderFromPipeline" -Force
+      New-Item -ItemType Directory -Path "C:\MyFolderFromPipeline1" -Force
       Write-Host "Hello World"
+      ping  192.168.10.48

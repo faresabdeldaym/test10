@@ -12,5 +12,5 @@ pool:
 steps:
 - task: PowerShell@2
   inputs:
-    filePath: 'C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1'
-    pwsh: true
+    targetType: 'inline'
+    script: 'Start-Process pwsh -ArgumentList ''-File "C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1"'''

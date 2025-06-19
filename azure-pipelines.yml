@@ -15,5 +15,5 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      
+      New-Item -ItemType Directory -Path "C:\MyFolderFromPipeline" -Force
       Write-Host "Hello World"

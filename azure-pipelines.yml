@@ -17,4 +17,4 @@ steps:
       # Write your PowerShell commands here.
       New-Item -ItemType Directory -Path "C:\MyFolderFromPipeline1" -Force
       Write-Host "Hello World"
-      ping  192.168.10.48
+      ping  192.168.15.48

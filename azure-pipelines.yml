@@ -15,4 +15,3 @@ steps:
     targetType: 'inline'
     script: '''Start-Process pwsh -ArgumentList ''''-File "C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1"'''''''
     verbosePreference: 'continue'
-    pwsh: true

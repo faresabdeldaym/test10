@@ -15,6 +15,6 @@ steps:
     targetType: 'inline'
     script: |
       Write-Host "Starting StaticCodeAnalyzer.ps1 in PowerShell 7..."
-      Start-Process pwsh -ArgumentList '-File', 'C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1' -Wait -NoNewWindow
+      Start-Process 'C:\Program Files\PowerShell\7\pwsh.exe' -ArgumentList '-File', 'C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1' -Wait -NoNewWindow
     displayName: 'Run StaticCodeAnalyzer.ps1 in PowerShell 7'
     verbosePreference: 'continue'

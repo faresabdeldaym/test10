@@ -13,5 +13,8 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: '''Start-Process pwsh -ArgumentList ''''-File "C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1"'''''''
+    script: |
+      Write-Host "Starting StaticCodeAnalyzer.ps1 in PowerShell 7..."
+      Start-Process pwsh -ArgumentList '-File', 'C:\Users\Administrator\Desktop\StaticCodeAnalyzer.ps1' -Wait -NoNewWindow
+    displayName: 'Run StaticCodeAnalyzer.ps1 in PowerShell 7'
     verbosePreference: 'continue'

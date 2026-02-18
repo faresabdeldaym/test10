@@ -15,5 +15,5 @@ steps:
     targetType: 'inline'
     script: |
       pwd
-      cd C:\Users\Administrator\Downloads\OpenText_SAST_Fortify_Samples_25.4.0\advanced\javaWebApp
+      C:\test.bat
       pwd

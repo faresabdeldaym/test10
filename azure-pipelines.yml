@@ -14,4 +14,4 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      sourceanalyzer -version
+      C:\test.bat

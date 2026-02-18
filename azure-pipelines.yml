@@ -14,5 +14,4 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      cd \
-      C:\test.bat
+      sourceanalyzer -b test1 -scan -f C:\azuretest.fpr

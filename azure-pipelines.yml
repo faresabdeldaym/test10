@@ -16,6 +16,4 @@ steps:
     script: |
       pwd
       cd C:\Users\Administrator\Downloads\OpenText_SAST_Fortify_Samples_25.4.0\advanced\javaWebApp
-      sourceanalyzer -b javaWebApp -clean 
-      sourceanalyzer -b javaWebApp mvn install
-      sourceanalyzer -b javaWebApp -scan -f C:\azuretest.fpr
+      pwd

@@ -14,4 +14,4 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      ping 8.8.8.8
+      ping 192.168.187.100
